@@ -1,4 +1,4 @@
-from pathbetweenpoints import convert_coord
+from traveltimefromhome.pathbetweenpoints import convert_coord
 
 
 def test_convert_coord():
