@@ -1,12 +1,21 @@
+"""
+pathbetweenpoints.py 
+
+This script uses the Graphhopper API and the folium library to plot a route
+between multiple coordinates on a map. It takes a list of coordinates, fetches
+the route from the Graphhopper API, and generates an HTML file with a map
+displaying the route and markers for the given coordinates.
+
+Needs a file apikey which contains the api key for the Graphhopper API.
+"""
+
 import folium
 from routingpy import Graphhopper
 
 
 # Helper functions
-
-
 def get_file_contents(filename):
-    """ Given a filename, return the contents of that file """
+    """ Given a filename, return the contents of that file"""
     try:
         with open(filename, 'r') as f:
             return f.read().strip()
@@ -17,7 +26,7 @@ def get_file_contents(filename):
 def convert_coord(coordinates):
     """
     Convert coordinates from [lon, lat] to [lat, lon] format
-    Needed for the folium map since the order is different compared to 
+    Needed for the folium map since the order is different compared to
     Graphhopper
     """
     coordinates1 = [None, None]
@@ -36,6 +45,7 @@ profile = 'car'
 
 
 def main():
+
     # Get API key
     api_key = get_file_contents(filename)
 
