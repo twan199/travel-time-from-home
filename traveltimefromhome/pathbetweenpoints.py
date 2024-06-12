@@ -1,5 +1,5 @@
 """
-pathbetweenpoints.py 
+pathbetweenpoints.py
 
 This script uses the Graphhopper API and the folium library to plot a route
 between multiple coordinates on a map. It takes a list of coordinates, fetches
