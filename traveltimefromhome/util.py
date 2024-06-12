@@ -26,3 +26,14 @@ def convert_coordinates(coordinates):
     coordinates1[0] = coordinates[1]
     coordinates1[1] = coordinates[0]
     return coordinates1
+
+
+def split_coordinates(coordinates):
+    """
+    Transform the list of dictionaries into a list of lists
+    """
+    coordinates_list = [[coord["longitude"], coord["latitude"]]
+                        for coord in coordinates]
+    cityname_list = [coord["city"]
+                     for coord in coordinates]
+    return coordinates_list, cityname_list

@@ -11,7 +11,7 @@ Needs a file apikey which contains the api key for the Graphhopper API.
 
 import folium
 from routingpy import Graphhopper
-from util import get_file_contents, convert_coordinates
+from util import get_file_contents, convert_coordinates, split_coordinates
 
 # Settings
 filename = 'apikey'
@@ -30,11 +30,8 @@ def main():
     # Initialize Graphhopper client
     client = Graphhopper(api_key=api_key)
 
-    # Transform the list of dictionaries into a list of tuples
-    coordinates_list = [[coord["longitude"], coord["latitude"]]
-                        for coord in coordinates]
-    cityname_list = [coord["city"]
-                     for coord in coordinates]
+    # Transform the list of dictionaries into a list of lists
+    coordinates_list, cityname_list = split_coordinates(coordinates)
 
     # Get route from Graphhopper
     route = client.directions(locations=coordinates_list, profile=profile)
