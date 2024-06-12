@@ -15,7 +15,11 @@ def get_file_contents(filename):
 
 
 def convert_coord(coordinates):
-    """Convert coordinates from [lon, lat] to [lat, lon] format"""
+    """
+    Convert coordinates from [lon, lat] to [lat, lon] format
+    Needed for the folium map since the order is different compared to 
+    Graphhopper
+    """
     coordinates1 = [None, None]
     coordinates1[0] = coordinates[1]
     coordinates1[1] = coordinates[0]
