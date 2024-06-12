@@ -1,4 +1,10 @@
-from traveltimefromhome.pathbetweenpoints import convert_coord
+"""
+test_pathbetweenpoints.py
+
+This module contains unit tests for the pathbetweenpoints script.
+"""
+
+from traveltimefromhome.util import convert_coord
 
 
 def test_convert_coord():
