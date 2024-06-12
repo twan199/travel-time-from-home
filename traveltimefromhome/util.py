@@ -16,7 +16,7 @@ def get_file_contents(filename):
         print("'%s' file not found" % filename)
 
 
-def convert_coord(coordinates):
+def convert_coordinates(coordinates):
     """
     Convert coordinates from [lon, lat] to [lat, lon] format
     Needed for the folium map since the order is different compared to
