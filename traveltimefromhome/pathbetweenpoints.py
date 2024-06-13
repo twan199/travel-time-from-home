@@ -15,10 +15,11 @@ from util import get_file_contents, convert_coordinates, split_coordinates
 
 # Settings
 filename = 'apikey'
-coordinates = [{"city": "Assen", "latitude": 53.0047, "longitude": 6.5622},
-               {"city": "Leeuwarden", "latitude": 53.2012, "longitude": 5.7999},
-               {"city": "Groningen", "latitude": 53.2194, "longitude": 6.5665},
-               {"city": "Arnhem", "latitude": 51.9851, "longitude": 5.8987}]
+coordinates = [
+    {"city": "Assen", "latitude": 53.0047, "longitude": 6.5622},
+    {"city": "Leeuwarden", "latitude": 53.2012, "longitude": 5.7999},
+    {"city": "Groningen", "latitude": 53.2194, "longitude": 6.5665},
+    {"city": "Arnhem", "latitude": 51.9851, "longitude": 5.8987}]
 profile = 'car'
 
 
