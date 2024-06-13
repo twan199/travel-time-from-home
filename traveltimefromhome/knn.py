@@ -4,7 +4,7 @@ K-Nearest Neighbors algorithm
 knn.py
 """
 import numpy as np
-from traveltimefromhome import util
+from util import split_coordinates
 # from sklearn.neighbors import NearestNeighbors
 
 
@@ -29,7 +29,7 @@ def knn(coordinates, start_city):
         list: A list of indices representing the order of coordinates
               from the closest to the farthest from the start_city.
     """
-    coordinates_list, cityname_list = util.split_coordinates(coordinates)
+    coordinates_list, cityname_list = split_coordinates(coordinates)
 
     # Find the index of the start_city in the cityname_list
     start_idx = cityname_list.index(start_city)
