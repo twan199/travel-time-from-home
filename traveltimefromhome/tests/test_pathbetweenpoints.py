@@ -4,7 +4,7 @@ test_pathbetweenpoints.py
 This module contains unit tests for the pathbetweenpoints script.
 """
 
-from traveltimefromhome.model.util import convert_coordinates
+from model.util import convert_coordinates
 
 
 def test_convert_coordinates():

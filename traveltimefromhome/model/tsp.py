@@ -2,8 +2,8 @@
 
 import folium
 from routingpy import Graphhopper
-from model.knn import knn
-from model.util import get_file_contents, convert_coordinates, split_coordinates
+from .knn import knn
+from .util import get_file_contents, convert_coordinates, split_coordinates
 # Settings
 filename = 'apikey'
 provincial_capitals_coords = [

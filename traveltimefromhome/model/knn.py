@@ -4,7 +4,7 @@ K-Nearest Neighbors algorithm
 knn.py
 """
 import numpy as np
-from model.util import split_coordinates
+from .util import split_coordinates
 # from sklearn.neighbors import NearestNeighbors
 
 

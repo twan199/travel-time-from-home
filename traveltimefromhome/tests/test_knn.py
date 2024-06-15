@@ -4,7 +4,7 @@ test_knn.py
 This module contains unit tests for the knn.py script.
 """
 
-from traveltimefromhome.model.knn import euclidean_distance2d, knn
+from model.knn import euclidean_distance2d, knn
 import pytest
 
 
